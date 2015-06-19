@@ -15,7 +15,7 @@ const fetchWeather = async(function* () {
 });
 
 self.addEventListener('install', async(function* (inst) {
-  //inst.waitUntil(fetchWeather());
+  inst.waitUntil(fetchWeather());
   console.log('installing done...');
 }));
 
@@ -24,7 +24,6 @@ self.addEventListener('fetch', async(function* (event) {
     console.log("checking match of "  + event.request.url);
     if (/preview.html$/.test(event.request.url)) {
       var html = getHTML(weatherData);
-      console.log(html);
       var response = new Response();
       const init = {
         headers: {
@@ -45,7 +44,6 @@ self.addEventListener('activate', async(function* (event) {
 }));
 
 function getHTML(data) {
-  console.log("getHTML",data);
   var data = data || {
     weather: [{
       main: 'testing'
