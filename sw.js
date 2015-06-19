@@ -5,7 +5,7 @@ var weatherData;
 
 const fetchWeather = async(function* () {
   try {
-    var req = yield fetch('/preview/weather.json')
+    var req = yield fetch('preview/weather.json')
     var data = yield req.json();
   } catch (err) {
     console.log(err);

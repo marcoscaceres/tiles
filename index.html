@@ -234,7 +234,7 @@
 const task = async(function* () {
   var reg;
   try {
-    reg = yield navigator.serviceWorker.register('/sw.js', {scope: "/preview/"});
+    reg = yield navigator.serviceWorker.register('sw.js', {scope: "preview/"});
     var iframe = document.createElement("iframe");
     iframe.src = "/preview/preview.html";
     document.body.appendChild(iframe);
