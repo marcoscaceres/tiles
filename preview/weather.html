@@ -1,0 +1,35 @@
+<!doctype html>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+  <style>
+  html, body{s
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+      background: url(clouds.png) no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
+  section {
+      font-size: 1em;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      border-radius: 20%;
+      padding: 5%;
+      background-color: rgba(255,255,255,.5);
+  }
+  </style>
+  <section>
+      <div class="pill" id="leftpill">
+          ${data.weather[0].main}
+      </div>
+      <div class="pill" id="righpill">
+          ${data.name}
+      </div>
+  </section>`

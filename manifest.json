@@ -1,0 +1,14 @@
+{
+  "name": "WebMob Interest Group",
+  "short_name": "WebMob",
+  "icons": [{
+    "src": "images/test.png",
+    "sizes": "706 × 436",
+    "density": "1"
+  }],
+  "icons_background_color": "red",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "natural",
+  "preview": "preview/preview.html"
+}
